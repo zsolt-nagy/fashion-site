@@ -1,0 +1,289 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Mukta, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  min-width: 400px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Set color based on background-color */
+/* Set Bg and text color based on one color */
+header {
+  text-align: center;
+}
+
+header .free {
+  padding: 1.2rem 0;
+  background-color: #8d0e0e;
+  font-size: 1.3rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header .logo {
+  color: #213c83;
+  padding: 1.5rem 0;
+  font-size: 3.2rem;
+}
+
+.navbar {
+  font-size: 2rem;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+}
+
+.navbar-toggler {
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar-toggler:hover {
+  background-color: #bdc6d0;
+}
+
+.navbar .nav-item {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar .nav-item .nav-link:hover {
+  background-color: #506070;
+  color: #fff;
+}
+
+.banner {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.192)), to(rgba(0, 0, 0, 0.212))), url(../Assets/Images/banner1b.png), radial-gradient(circle, black 0%, #f4f4f4 0%, black 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.212)), url(../Assets/Images/banner1b.png), radial-gradient(circle, black 0%, #f4f4f4 0%, black 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: contain;
+}
+
+.banner__text {
+  color: #fff;
+  line-height: 1;
+}
+
+.banner__h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.banner__p {
+  font-size: 3rem;
+}
+
+.sweater {
+  margin: 0 auto;
+  padding-top: 7rem;
+  width: 400px;
+}
+
+.sweater-item {
+  margin-bottom: 7rem;
+  width: 400px;
+}
+
+.sweater__h2 {
+  font-size: 4rem;
+  color: #213c83;
+}
+
+.sweater__paragraph {
+  font-size: 2rem;
+}
+
+.sweater a {
+  font-size: 2rem;
+}
+
+.sweater .image__wraper {
+  height: 500px;
+  overflow: hidden;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sweater .image__wraper:hover {
+  -webkit-transform: perspective(100px) rotateY(-10deg) translateX(-5px) translateZ(-50px);
+          transform: perspective(100px) rotateY(-10deg) translateX(-5px) translateZ(-50px);
+}
+
+.sweater img {
+  -webkit-transition-delay: 1.5s;
+          transition-delay: 1.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.sweater img:hover {
+  -webkit-transform: perspective(223px) translateZ(48px) translateY(44px);
+          transform: perspective(223px) translateZ(48px) translateY(44px);
+}
+
+.h-250 {
+  height: 250px;
+}
+
+.terms {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer__container {
+  background-color: #d3d3d3;
+  text-align: center;
+}
+
+.footer__container .social__icons {
+  height: inherit;
+}
+
+.footer__container .fab {
+  font-size: 5rem;
+  padding: 1rem 1rem;
+}
+
+.footer__container .fa-facebook {
+  color: #213c83;
+}
+
+.under__footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.circle {
+  -webkit-box-shadow: 0px 0px 5px grey;
+          box-shadow: 0px 0px 5px grey;
+  border-radius: 50%;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 50px;
+  z-index: 5;
+  background: #f4f4f4;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.back {
+  right: 10px;
+}
+
+.back a {
+  color: #757575;
+}
+
+.back .fa {
+  font-size: 3rem;
+  padding: 3.5rem;
+  border-radius: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.back .fa:hover {
+  background-color: #5b5b5b;
+  color: #fff;
+}
+
+.leave {
+  left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.leave:hover {
+  background-color: #5b5b5b;
+  color: #fff;
+}
+
+.leave .checkbox {
+  visibility: hidden;
+}
+
+.leave p {
+  line-height: 1;
+  padding-top: 1rem;
+}
+
+.leave #form__active:checked ~ .form {
+  -webkit-transform: translateZ(0) translateY(0);
+          transform: translateZ(0) translateY(0);
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  bottom: 15%;
+  min-width: 300px;
+  max-width: 500px;
+  left: 100px;
+  -webkit-transform: translateX(-500px) translateY(300px);
+          transform: translateX(-500px) translateY(300px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0px 0px 5px grey;
+          box-shadow: 0px 0px 5px grey;
+}
+
+.form__item {
+  width: 100%;
+  border: 1px solid #8d0e0e;
+}
+
+.form__item:hover {
+  background-color: #cecece;
+  color: #333;
+}
+
+::-webkit-input-placeholder {
+  color: #8d0e0e;
+}
+
+:-ms-input-placeholder {
+  color: #8d0e0e;
+}
+
+::-ms-input-placeholder {
+  color: #8d0e0e;
+}
+
+::placeholder {
+  color: #8d0e0e;
+}
+
+@media (min-width: 768px) {
+  .sweater {
+    width: 100%;
+  }
+  .h-250 {
+    height: 400px;
+  }
+}
