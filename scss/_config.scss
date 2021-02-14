@@ -1,0 +1,38 @@
+$promo-color: #8d0e0e;
+$primary-color: #f4f4f4;
+$footer-color: #d3d3d3;
+$font-color: #fff;
+$header-color: #213c83;
+$navbar-color: #f8f9fa;
+
+html {
+  font-size: 10px;
+}
+body {
+  background-color: $primary-color;
+  font-family: Mukta, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  min-width: 400px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
+/* Set color based on background-color */
+
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+/* Set Bg and text color based on one color */
+@mixin set-mix-color($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}

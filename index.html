@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Site</title>
+    <link
+      rel="stylesheet"
+      href="./Assets/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <aside class="free">
+        1% off: Use promo code generous2021 | free shipping
+      </aside>
+      <h1 class="logo">Gianni Bellini</h1>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Gianni Bellini</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Scarfs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shirts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jackets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="align-items-center banner d-flex flex-column justify-content-center w-100"
+      >
+        <h2 class="banner__text banner__h2">Amazing Jacket</h2>
+        <p class="banner__text banner__p">Purchase it while stocks last!</p>
+      </div>
+      <section class="sweater container d-md-flex justify-content-around">
+        <div class="sweater-item item1">
+          <div class="image__wraper">
+            <img src="./Assets/Images/banner2.png" alt="Ugly sweater 1" />
+          </div>
+          <h2 class="sweater__h2">Ugly Sweater Sale</h2>
+          <p class="sweater__paragraph">
+            Purchase your stylish xmas ugly sweater for your 2021 ugly swater
+            competition already in January. Made from 100% plastic.
+          </p>
+          <a href="#">Any two sweaters for $5</a>
+        </div>
+        <div class="sweater-item item2">
+          <div class="image__wraper">
+            <img src="./Assets/Images/banner3.png" alt="Ugly sweater 2" />
+          </div>
+          <h2 class="sweater__h2">Ugly Sweater Sale</h2>
+          <p class="sweater__paragraph">
+            Purchase your stylish xmas ugly sweater for your 2021 ugly swater
+            competition already in January. Made from 100% plastic.
+          </p>
+          <a href="#">Any two sweaters for $5</a>
+        </div>
+      </section>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 h-250"
+              width="800"
+              height="400"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: First slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777"></rect>
+              <text x="50%" y="50%" fill="#555" dy=".3em">First slide</text>
+            </svg>
+
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 h-250"
+              width="800"
+              height="400"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: Second slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#666"></rect>
+              <text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img bd-placeholder-img-lg d-block w-100 h-250"
+              width="800"
+              height="400"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Placeholder: Third slide"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#555"></rect>
+              <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>Third slide label</h5>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+      <section class="terms">
+        <h2 class="terms__h2">Terms and Conditions</h2>
+        <p class="terms__paragraph">Small text</p>
+        <p class="terms__paragraph">Small text</p>
+      </section>
+    </main>
+    <footer class="footer__container">
+      <div class="social__icons">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </div>
+    </footer>
+    <div class="under__footer">Copyright &copy; Gianni Bellini</div>
+    <div class="circle back">
+      <a href="#"> <i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
+    <label class="circle leave" for="form__active">
+      <input
+        type="checkbox"
+        name="checked"
+        id="form__active"
+        class="checkbox"
+      />
+      <p>Leave a message</p>
+
+      <form action="#" method="post" class="form flex-column position-fixed">
+        <label class="form__label">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            class="form__input form__item"
+          />
+        </label>
+        <label class="form__label">
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            class="form__input form__item"
+          />
+        </label>
+        <textarea
+          placeholder="Message"
+          class="form__textarea form__item"
+        ></textarea>
+        <input type="submit" value="Send" class="form__input form__item" />
+      </form>
+    </label>
+    <script src="./Assets/bootstrap-5.0.0-beta1-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

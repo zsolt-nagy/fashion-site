@@ -1,0 +1,203 @@
+@import "config";
+
+header {
+  text-align: center;
+  .free {
+    padding: 1.2rem 0;
+    background-color: $promo-color;
+    font-size: 1.3rem;
+    color: $font-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .logo {
+    color: $header-color;
+    padding: 1.5rem 0;
+    font-size: 3.2rem;
+  }
+}
+.navbar {
+  font-size: 2rem;
+  &-brand {
+    font-size: 2.2rem;
+  }
+  &-toggler {
+    border: none;
+    transition: 0.2s;
+    &:hover {
+      background-color: darken($navbar-color, 20%);
+    }
+  }
+  .nav-item {
+    transition: 0.2s;
+    .nav-link:hover {
+      @include set-mix-color(darken($navbar-color, 60%));
+    }
+  }
+}
+
+.banner {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.212)),
+    url(../Assets/Images/banner1b.png),
+    radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(244, 244, 244, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: contain;
+  &__text {
+    color: $font-color;
+    line-height: 1;
+  }
+  &__h2 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  &__p {
+    font-size: 3rem;
+  }
+}
+
+.sweater {
+  margin: 0 auto;
+  padding-top: 7rem;
+  width: 400px;
+
+  &-item {
+    margin-bottom: 7rem;
+    width: 400px;
+  }
+  &__h2 {
+    font-size: 4rem;
+    color: $header-color;
+  }
+  &__paragraph {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 2rem;
+  }
+  .image__wraper {
+    height: 500px;
+    overflow: hidden;
+    transition-delay: 1s;
+    transition: 1s;
+
+    &:hover {
+      transform: perspective(100px) rotateY(-10deg) translateX(-5px)
+        translateZ(-50px);
+    }
+  }
+  img {
+    transition-delay: 1.5s;
+    transition: 1s;
+    &:hover {
+      transform: perspective(223px) translateZ(48px) translateY(44px);
+    }
+  }
+}
+
+.h-250 {
+  height: 250px;
+}
+
+.terms {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer__container {
+  background-color: $footer-color;
+  text-align: center;
+
+  .social__icons {
+    height: inherit;
+  }
+  .fab {
+    font-size: 5rem;
+    padding: 1rem 1rem;
+  }
+  .fa-facebook {
+    color: $header-color;
+  }
+}
+
+.under__footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.circle {
+  box-shadow: 0px 0px 5px grey;
+  border-radius: 50%;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 50px;
+  z-index: 5;
+  background: $primary-color;
+  cursor: pointer;
+  user-select: none;
+}
+.back {
+  right: 10px;
+  a {
+    color: darken($primary-color, 50%);
+  }
+  .fa {
+    font-size: 3rem;
+    padding: 3.5rem;
+    border-radius: 100%;
+    transition: 0.3s;
+    &:hover {
+      @include set-mix-color(darken($primary-color, 60%));
+    }
+  }
+}
+.leave {
+  left: 10px;
+  transition: 0.3s;
+  &:hover {
+    @include set-mix-color(darken($primary-color, 60%));
+  }
+  .checkbox {
+    visibility: hidden;
+  }
+  p {
+    line-height: 1;
+    padding-top: 1rem;
+  }
+  #form__active:checked ~ .form {
+    transform: translateZ(0) translateY(0);
+  }
+}
+
+.form {
+  display: flex;
+  z-index: 10;
+  bottom: 15%;
+  min-width: 300px;
+  max-width: 500px;
+  left: 100px;
+  transform: translateX(-500px) translateY(300px);
+  transition: all 0.5s;
+  box-shadow: 0px 0px 5px grey;
+
+  &__item {
+    width: 100%;
+    border: 1px solid $promo-color;
+    &:hover {
+      @include set-mix-color(darken($primary-color, 15%));
+    }
+  }
+}
+::placeholder {
+  color: $promo-color;
+}
+@import "media";
